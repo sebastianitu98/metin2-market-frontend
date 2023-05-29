@@ -9,7 +9,7 @@ function SecondaryAccount({ data }) {
 
       <div className="secondaryAccountDetails text-center mx-2">
         <h3>Lv.{data.level}</h3>
-        <img className='secondaryAccountImage' src={`src/assets/${data.rasa}100px.png`} alt={`${data.rasa}`} title={`${data.rasa}`} />
+        <img className='secondaryAccountImage' src={`${data.rasa}100px.png`} alt={`${data.rasa}`} title={`${data.rasa}`} />
       </div>
 
       <div className="secondaryAccountSkillsAndAlchemy w-full flex flex-col mx-auto">
