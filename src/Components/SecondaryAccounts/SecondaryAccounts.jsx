@@ -11,7 +11,7 @@ function SecondaryAccounts({ data }) {
                     data.secondaryAccountsList.map((el, index) => <SecondaryAccount data={el} key={index} />)
 
                 }
-                {!data.secondaryAccounts && <><NoSecondaryAccount /> <NoSecondaryAccount /> <NoSecondaryAccount /></>}
+                {data.secondaryAccounts && data.secondaryAccountsList.length == 0 && <><NoSecondaryAccount /> <NoSecondaryAccount /> <NoSecondaryAccount /></>}
                 {data.secondaryAccounts && data.secondaryAccountsList.length == 1 && <><NoSecondaryAccount /> <NoSecondaryAccount /> </>}
                 {data.secondaryAccounts && data.secondaryAccountsList.length == 2 && <><NoSecondaryAccount /></>}
             </div>
