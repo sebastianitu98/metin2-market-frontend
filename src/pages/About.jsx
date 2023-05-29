@@ -15,7 +15,7 @@ function About() {
             <br />
             <p className='text-xl'>
                 ASADAR AVANTAJUL ESTE CA TOATE PREZENTARILE PLATFORMELOR VOR PUTEA FI
-                CENTRALIZATE PE ACEST WEBSITE SI NU VA TREBUI SA CAUTI PREA MULT PENTRU PLATFORMA TA FAVORITA.
+                CENTRALIZATE PE ACEST WEBSITE SI NU VA TREBUI SA CAUTI PREA MULT PENTRU A GASI PLATFORMA TA FAVORITA.
             </p>
             <br />
             <p className='text-xl'>
