@@ -89,7 +89,7 @@ function PlatformResults() {
                 priceW: 100,
                 priceRON: 500,
                 description: 'Se vide cont ninja lv 123 bio la crengute dsa sasagiufasghuashguhgsauishgauhgsaiuagshuiasghiuasghiusaghiuasghiuasghguhugsahuigshaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagsaugshiuasghuiagshiuasghiusaghiugsahugsahugsahighsaihgasiuhguashgsahgash iuaiugsahiu ghsaiughsa iughsaiu hiuaghs uhgas iugash iugashig hasughasi hgahgas uhgaihg higa higahig hihgahgah igahgiauhgashgiu ahgha i',
-                id: 139123,
+                _id: 139123,
                 contact: 'Alfredo#9912'
         },
         {
@@ -163,7 +163,7 @@ function PlatformResults() {
                 priceW: 100,
                 priceRON: 500,
                 description: 'Se vide cont ninja lv 123 bio la crengute',
-                id: 1391239314,
+                _id: 1391239314,
                 contact: 'Alfredo#9912'
         },
         {
@@ -225,7 +225,7 @@ function PlatformResults() {
                 priceW: 100,
                 priceRON: 500,
                 description: 'Se vide cont ninja lv 123 bio la crengute',
-                id: 139123423,
+                _id: 139123423,
                 contact: 'Alfredo#9912'
         },
         {
@@ -275,7 +275,7 @@ function PlatformResults() {
                 priceW: 100,
                 priceRON: 500,
                 description: 'Se vide cont ninja lv 123 bio la crengute',
-                id: 13916655623,
+                _id: 13916655623,
                 contact: 'Alfredo#9912'
         },
         {
@@ -349,7 +349,7 @@ function PlatformResults() {
                 priceW: 100,
                 priceRON: 500,
                 description: 'Se vide cont ninja lv 123 bio la crengute',
-                id: 13912323123,
+                _id: 13912323123,
                 contact: 'Alfredo#9912'
         },
         {
@@ -434,7 +434,7 @@ function PlatformResults() {
                 priceW: 100,
                 priceRON: 500,
                 description: 'Se vide cont ninja lv 123 bio la crengute dsa sasagiufasghuashguhgsauishgauhgsaiuagshuiasghiuasghiusaghiuasghiuasghguhugsahuigshaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagsaugshiuasghuiagshiuasghiusaghiugsahugsahugsahighsaihgasiuhguashgsahgash iuaiugsahiu ghsaiughsa iughsaiu hiuaghs uhgas iugash iugashig hasughasi hgahgas uhgaihg higa higahig hihgahgah igahgiauhgashgiu ahgha i',
-                id: 139123,
+                _id: 139123,
                 contact: 'Alfredo#9912'
         },
         {
@@ -519,94 +519,10 @@ function PlatformResults() {
                 priceW: 100,
                 priceRON: 500,
                 description: 'Se vide cont ninja lv 123 bio la crengute dsa sasagiufasghuashguhgsauishgauhgsaiuagshuiasghiuasghiusaghiuasghiuasghguhugsahuigshaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagsaugshiuasghuiagshiuasghiusaghiugsahugsahugsahighsaihgasiuhguashgsahgash iuaiugsahiu ghsaiughsa iughsaiu hiuaghs uhgas iugash iugashig hasughasi hgahgas uhgaihg higa higahig hihgahgah igahgiauhgashgiu ahgha i',
-                id: 139123,
+                _id: 139123,
                 contact: 'Alfredo#9912'
         },
-        {
-                server: 'Carpathians',
-                level: 120,
-                levelChamp: true,
-                levelChampion: 30,
-                rasa: 'war',
-                skills: 's1',
-                skillsInfo: {
-                        skill1: 'G1',
-                        skill2: 'M7',
-                        skill3: 'M3',
-                        skill4: 'M8',
-                        skill5: 'M',
-                        skill6: 'M10',
-                        skill7: 'P',
-                        respingere: {
-                                name: 'atacSpirit',
-                                points: 'M6'
-                        },
-                        ajutor: 'M8'
-                },
-                biolog: 'tugyi',
-                biologDuse: 0,
-                alchemy: {
-                        ruby: { class: '', clarity: '' },
-                        diamond: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
-                        onyx: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
-                        granate: { class: 'mitic', clarity: 'stralucitor', bonuses: { bns1: 'bns1', bns2: 'bns4', bns3: 'bns3' } },
-                        saphire: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns8' } },
-                        jade: { class: 'mitic', clarity: 'excelent', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
-                },
-                permanentHelpers: { conducere: 'M7', inspiratie: 'M1', carisma: 'M2', polymorph: 'P', precizie: 'G3', horseLevel: 13 },
-                auraCostume: true,
-                unlockedInventories: 6,
-                pet: false,
-                petDays: 100,
-                amulets: true,
-                amuletsArray: [{ name: 'nazar', time: '120d' }, { name: 'nazar', time: '120d' }, { name: 'nazar', time: '120d' }, { name: 'nazar', time: '60d' }, { name: 'nazar', time: '120d' }, { name: 'nazar', time: '120d' }, { name: 'nazar', time: '120d' }, { name: 'nazar', time: '120d' },],
-                subCharacters: true,
-                subCharactersList: [{ level: 111, rasa: 'war' },],
-                secondaryAccounts: true,
-                secondaryAccountsList: [
-                        {
-                                rasa: 'lykan', level: 61, skills: 's1', skillsInfo: { skill1: '1', skill2: 'M7', skill3: 'M3', },
-                                alchemy: {
-                                        ruby: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
-                                        diamond: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
-                                        onyx: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
-                                        granate: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
-                                        saphire: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
-                                        jade: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
-                                }
-                        },
-                        {
-                                rasa: 'shaman', level: 61, skills: 's1', skillsInfo: { skill1: '1', skill2: 'M7', skill3: 'M3', },
-                                alchemy: {
-                                        ruby: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
-                                        diamond: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
-                                        onyx: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
-                                        granate: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
-                                        saphire: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
-                                        jade: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
-                                }
-                        },
-                        {
-                                rasa: 'lykan', level: 61, skills: 's1', skillsInfo: { skill1: '1', skill2: 'M7', skill3: 'M3', },
-                                alchemy: {
-                                        ruby: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
-                                        diamond: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
-                                        onyx: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
-                                        granate: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
-                                        saphire: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
-                                        jade: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
-                                }
-                        }
 
-                ],
-                meleyAccounts: true,
-                meleyAccountsNumber: 0,
-                priceW: 100,
-                priceRON: 500,
-                description: 'Se vide cont ninja lv 123 bio la crengute dsa sasagiufasghuashguhgsauishgauhgsaiuagshuiasghiuasghiusaghiuasghiuasghguhugsahuigshaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagsaugshiuasghuiagshiuasghiusaghiugsahugsahugsahighsaihgasiuhguashgsahgash iuaiugsahiu ghsaiughsa iughsaiu hiuaghs uhgas iugash iugashig hasughasi hgahgas uhgaihg higa higahig hihgahgah igahgiauhgashgiu ahgha i',
-                id: 139123,
-                contact: 'Alfredo#9912'
-        },
         ]
 
         useEffect(() => {
