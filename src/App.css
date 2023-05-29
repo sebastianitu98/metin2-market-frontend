@@ -46,3 +46,13 @@
 ::-webkit-scrollbar-thumb:hover {
     background: hsl(0, 0%, 100%);
 }
+
+@media only screen and (max-width: 625px) {
+    .platform .secondaryAccounts {
+        display: none;
+    }
+
+    .platform .subCharactersElement {
+        display: none
+    }
+}

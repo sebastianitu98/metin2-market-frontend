@@ -4,7 +4,7 @@ import NoSubCharacter from '../Subcharacter/NoSubCharacter'
 
 function SubCharacters({ data }) {
     return (
-        <div className='flex flex-col justify-between w-full'>
+        <div className='subCharactersElement flex flex-col justify-between w-full'>
             <h5 className='mx-auto my-1'>SUBCARACTERE</h5>
             <div className="subCharacters flex w-full">
                 {data.subCharacters && data.subCharactersList.map((el, index) => <Subcharacter data={el} key={index} />)}

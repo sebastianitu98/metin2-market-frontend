@@ -13,6 +13,11 @@
     padding-bottom: 1px;
 }
 
+.platform .firstColumn {
+    min-width: 132px;
+    max-width: 132px;
+}
+
 .readMore {
     max-width: fit-content;
     appearance: button;
@@ -78,6 +83,7 @@
 
     .platform {
         max-width: 100%;
+
     }
 
     .platform .upperContent .firstColumn .rasaImagineDiv {
