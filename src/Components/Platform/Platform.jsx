@@ -34,7 +34,7 @@ function Platform({ data }) {
                     </div>
 
                     <div className="rasaImagineDiv mx-auto flex justify-center">
-                        <img className='mx-auto' src={`src/assets/${data.rasa}.png`} alt="Img containing race" />
+                        <img className='mx-auto' src={`${data.rasa}.png`} alt="Img containing race" />
                     </div>
 
                     <div className="biologAuraCostume flex flex-col justify-center">
@@ -55,7 +55,7 @@ function Platform({ data }) {
                                     title={`${elementeBiolog['bijIntelepciune'].name}`}
                                 />
                                 <img className='yesOrNo'
-                                    src='src\assets\yes.png'
+                                    src='yes.png'
                                     alt={`BIOLOG TERMINAT`}
                                     title={`BIOLOG TERMINAT`}
                                 />
@@ -73,11 +73,11 @@ function Platform({ data }) {
                         {data.auraCostume ?
                             <div className='flex my-2 mx-auto flex justify-between w-3/4 items-center'>
                                 <img className='alchemyOrSkill' src={costumAura} alt="Detine costum aura" />
-                                <img className='yesOrNo' src="src/assets/yes.png" alt="DA" />
+                                <img className='yesOrNo' src="yes.png" alt="DA" />
                             </div> :
                             <div className="flex my-2 mx-auto flex justify-between w-3/4 items-center">
                                 <img className='alchemyOrSkill' src={costumAura} alt="Nu detine costum aura" />
-                                <img className='yesOrNo' src="src/assets/no.png" alt="NU" />
+                                <img className='yesOrNo' src="no.png" alt="NU" />
                             </div>}
 
                     </div>
@@ -88,14 +88,14 @@ function Platform({ data }) {
                             <div className='mx-auto my-2 w-full'>
                                 <div className='mx-auto my-2 flex justify-between  w-3/4 items-center'>
                                     <img className='alchemyOrSkill' src={`${peturi.khan.url}`} alt="No pet" title='Khan / Porcusor' />
-                                    <img className='yesOrNo' src="src/assets/no.png" alt="NU" />
+                                    <img className='yesOrNo' src="no.png" alt="NU" />
                                 </div>
                                 <span className=''>0 z</span>
                             </div> :
                             <div className='mx-auto my-2 w-full'>
                                 <div className='mx-auto my-2 flex justify-between w-3/4 items-center'>
                                     <img className='alchemyOrSkill' src={`${peturi.khan.url}`} alt="Yes pet" title='Khan / Porcusor' />
-                                    <img className='yesOrNo' src="src/assets/yes.png" alt="DA" />
+                                    <img className='yesOrNo' src="yes.png" alt="DA" />
                                 </div>
                                 <span className=''>{data.petDays} z</span>
                             </div>
