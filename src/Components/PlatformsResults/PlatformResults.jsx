@@ -7,20 +7,371 @@ function PlatformResults() {
         const [results, setResults] = useState([])
         const [newResults, setNewResults] = useState()
 
-        useEffect(() => {
-                //get data from the server (get all platforms)
-
-                const getData = async () => {
-                        const response = await fetch('http://localhost:4000/')
-                        const json = await response.json()
-                        if (response.ok) {
-                                setResults(json)
-                                setNewResults(json)
+        let res = [{
+                server: 'Carpathians',
+                level: 120,
+                levelChamp: true,
+                levelChampion: 30,
+                rasa: 'war',
+                skills: 's1',
+                skillsInfo: {
+                        skill1: 'G1',
+                        skill2: 'M7',
+                        skill3: 'M3',
+                        skill4: 'M8',
+                        skill5: 'M',
+                        skill6: 'M10',
+                        skill7: 'P',
+                        respingere: {
+                                name: 'atacSpirit',
+                                points: 'M6'
+                        },
+                        ajutor: 'M8'
+                },
+                biolog: 'tugyi',
+                biologDuse: 0,
+                alchemy: {
+                        ruby: { class: '', clarity: '' },
+                        diamond: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                        onyx: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                        granate: { class: 'mitic', clarity: 'stralucitor', bonuses: { bns1: 'bns1', bns2: 'bns4', bns3: 'bns3' } },
+                        saphire: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns8' } },
+                        jade: { class: 'mitic', clarity: 'excelent', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                },
+                permanentHelpers: { conducere: 'M7', inspiratie: 'M1', carisma: 'M2', polymorph: 'P', precizie: 'G3', horseLevel: 13 },
+                auraCostume: true,
+                unlockedInventories: 6,
+                pet: false,
+                petDays: 100,
+                amulets: true,
+                amuletsArray: [{ name: 'nazar', time: '120d' }, { name: 'nazar', time: '120d' }, { name: 'nazar', time: '120d' }, { name: 'nazar', time: '60d' }, { name: 'nazar', time: '120d' }, { name: 'nazar', time: '120d' }, { name: 'nazar', time: '120d' }, { name: 'nazar', time: '120d' },],
+                subCharacters: true,
+                subCharactersList: [],
+                secondaryAccounts: true,
+                secondaryAccountsList: [
+                        {
+                                rasa: 'lykan', level: 61, skills: 's1', skillsInfo: { skill1: '1', skill2: 'M7', skill3: 'M3', },
+                                alchemy: {
+                                        ruby: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        diamond: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        onyx: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        granate: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        saphire: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        jade: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                }
+                        },
+                        {
+                                rasa: 'shaman', level: 61, skills: 's1', skillsInfo: { skill1: '1', skill2: 'M7', skill3: 'M3', },
+                                alchemy: {
+                                        ruby: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        diamond: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        onyx: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        granate: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        saphire: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        jade: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                }
+                        },
+                        {
+                                rasa: 'lykan', level: 61, skills: 's1', skillsInfo: { skill1: '1', skill2: 'M7', skill3: 'M3', },
+                                alchemy: {
+                                        ruby: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        diamond: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        onyx: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        granate: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        saphire: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        jade: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                }
                         }
-                }
 
-                getData()
+                ],
+                meleyAccounts: true,
+                meleyAccountsNumber: 0,
+                priceW: 100,
+                priceRON: 500,
+                description: 'Se vide cont ninja lv 123 bio la crengute dsa sasagiufasghuashguhgsauishgauhgsaiuagshuiasghiuasghiusaghiuasghiuasghguhugsahuigshaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagsaugshiuasghuiagshiuasghiusaghiugsahugsahugsahighsaihgasiuhguashgsahgash iuaiugsahiu ghsaiughsa iughsaiu hiuaghs uhgas iugash iugashig hasughasi hgahgas uhgaihg higa higahig hihgahgah igahgiauhgashgiu ahgha i',
+                id: 139123,
+                contact: 'Alfredo#9912'
+        },
+        {
+                server: 'Carpathians',
+                level: 115,
+                levelChamp: false,
+                levelChampion: 0,
+                rasa: 'shaman',
+                skills: 's1',
+                skillsInfo: {
+                        skill1: '1',
+                        skill2: 'M7',
+                        skill3: 'M3',
+                        skill4: 'M8',
+                        skill5: 'G4',
+                        skill6: 'M10',
+                        skill7: 'P',
+                        respingere: {
+                                name: 'atacSpirit',
+                                points: 'M6'
+                        },
+                        ajutor: 'M8'
+                },
+                biolog: 'zelkova',
+                biologDuse: 14,
+                alchemy: {
+                        ruby: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                        diamond: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                        onyx: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                        granate: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                        saphire: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                        jade: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                },
+                permanentHelpers: { conducere: 'm7', inspiratie: 'm1', carisma: 'm2', polymorph: 'P', precizie: 'G3', horseLevel: 13 },
+                auraCostume: true,
+                unlockedInventories: 6,
+                pet: true,
+                petDays: 100,
+                amulets: true,
+                amuletsArray: [{ name: 'nazar', time: '120d' }, { name: 'nazar', time: '60d' }],
+                subCharacters: true,
+                subCharactersList: [{ level: 111, rasa: 'war' }, { level: 115, rasa: 'shaman' }, { level: 115, rasa: 'sura' }, { level: 115, rasa: 'lykan' }],
+                secondaryAccounts: true,
+                secondaryAccountsList: [
+                        {
+                                rasa: 'ninja', level: 61, skills: 's1', skillsInfo: { skill1: '1', skill2: 'M7', skill3: 'M3', },
+                                alchemy: {
+                                        ruby: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        diamond: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        onyx: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        granate: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        saphire: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        jade: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                }
+                        },
+                        {
+                                rasa: 'sura', level: 61, skills: 's1', skillsInfo: { skill1: '1', skill2: 'M7', skill3: 'M3', },
+                                alchemy: {
+                                        ruby: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        diamond: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        onyx: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        granate: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        saphire: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        jade: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                }
+                        },
+
+                ],
+                meleyAccounts: true,
+                meleyAccountsNumber: 9,
+                priceW: 100,
+                priceRON: 500,
+                description: 'Se vide cont ninja lv 123 bio la crengute',
+                id: 1391239314,
+                contact: 'Alfredo#9912'
+        },
+        {
+                server: 'Carpathians',
+                level: 55,
+                levelChamp: false,
+                levelChampion: 0,
+                rasa: 'sura',
+                skills: 's1',
+                skillsInfo: {
+                        skill1: 'G1',
+                        skill2: 'M7',
+                        skill3: 'M3',
+                        skill4: 'M8',
+                        skill5: 'M',
+                        skill6: 'M10',
+                        skill7: 'P',
+                        respingere: {
+                                name: 'atacSpirit',
+                                points: 'M6'
+                        },
+                        ajutor: 'M8'
+                },
+                biolog: 'tugyi',
+                biologDuse: 13,
+                alchemy: {
+                        ruby: { class: '', clarity: '' },
+                        diamond: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                        onyx: { class: 'mitic', clarity: 'opac' },
+                        granate: { class: 'mitic', clarity: 'stralucitor', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                        saphire: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                        jade: { class: 'mitic', clarity: 'excelent', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                },
+                permanentHelpers: { conducere: 'M7', inspiratie: 'M1', carisma: 'M2', polymorph: 'P', precizie: 'G3', horseLevel: 13 },
+                auraCostume: true,
+                unlockedInventories: 6,
+                pet: true,
+                petDays: 100,
+                amulets: true,
+                amuletsArray: [{ name: 'nazar', time: '120d' }, { name: 'nazar', time: '60d' }],
+                subCharacters: true,
+                subCharactersList: [{ level: 111, rasa: 'war' }, { level: 115, rasa: 'shaman' }, { level: 115, rasa: 'shaman' }, { level: 115, rasa: 'shaman' }],
+                secondaryAccounts: true,
+                secondaryAccountsList: [
+                        {
+                                rasa: 'shaman', level: 61, skills: 's1', skillsInfo: { skill1: '1', skill2: 'M7', skill3: 'M3', },
+                                alchemy: {
+                                        ruby: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        diamond: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        onyx: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        granate: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        saphire: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        jade: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                }
+                        },
+                ],
+                meleyAccounts: true,
+                meleyAccountsNumber: 9,
+                priceW: 100,
+                priceRON: 500,
+                description: 'Se vide cont ninja lv 123 bio la crengute',
+                id: 139123423,
+                contact: 'Alfredo#9912'
+        },
+        {
+                server: 'Carpathians',
+                level: 75,
+                levelChamp: false,
+                levelChampion: 0,
+                rasa: 'ninja',
+                skills: 's1',
+                skillsInfo: {
+                        skill1: 'G1',
+                        skill2: 'M7',
+                        skill3: 'M3',
+                        skill4: 'M8',
+                        skill5: 'M',
+                        skill6: 'M10',
+                        skill7: 'P',
+                        respingere: {
+                                name: 'atacSpirit',
+                                points: 'M6'
+                        },
+                        ajutor: 'M8'
+                },
+                biolog: 'tugyi',
+                biologDuse: 14,
+                alchemy: {
+                        ruby: { class: '', clarity: '' },
+                        diamond: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                        onyx: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                        granate: { class: 'mitic', clarity: 'stralucitor', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                        saphire: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                        jade: { class: 'mitic', clarity: 'excelent', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                },
+                permanentHelpers: { conducere: 'M7', inspiratie: 'M1', carisma: 'M2', polymorph: 'P', precizie: 'G3', horseLevel: 13 },
+                auraCostume: true,
+                unlockedInventories: 6,
+                pet: true,
+                petDays: 100,
+                amulets: true,
+                amuletsArray: [{ name: 'nazar', time: '120d' }, { name: 'nazar', time: '60d' }],
+                subCharacters: true,
+                subCharactersList: [{ level: 111, rasa: 'war' }, { level: 115, rasa: 'shaman' }, { level: 115, rasa: 'shaman' }, { level: 115, rasa: 'shaman' }],
+                secondaryAccounts: true,
+                secondaryAccountsList: [],
+                meleyAccounts: true,
+                meleyAccountsNumber: 9,
+                priceW: 100,
+                priceRON: 500,
+                description: 'Se vide cont ninja lv 123 bio la crengute',
+                id: 13916655623,
+                contact: 'Alfredo#9912'
+        },
+        {
+                server: 'Carpathians',
+                level: 103,
+                levelChamp: false,
+                levelChampion: 0,
+                rasa: 'lykan',
+                skills: 's1',
+                skillsInfo: {
+                        skill1: 'G1',
+                        skill2: 'M7',
+                        skill3: 'M3',
+                        skill4: 'M8',
+                        skill5: 'M',
+                        skill6: 'M10',
+                        skill7: 'P',
+                        respingere: {
+                                name: 'atacSpirit',
+                                points: 'M6'
+                        },
+                        ajutor: 'M8'
+                },
+                biolog: 'tugyi',
+                biologDuse: 14,
+                alchemy: {
+                        ruby: { class: '', clarity: '' },
+                        diamond: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                        onyx: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                        granate: { class: 'mitic', clarity: 'stralucitor', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                        saphire: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                        jade: { class: 'mitic', clarity: 'excelent', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                },
+                permanentHelpers: { conducere: 'M7', inspiratie: 'M1', carisma: 'M2', polymorph: 'P', precizie: 'G3', horseLevel: 13 },
+                auraCostume: true,
+                unlockedInventories: 6,
+                pet: true,
+                petDays: 100,
+                amulets: true,
+                amuletsArray: [{ name: 'nazar', time: '120d' }, { name: 'nazar', time: '60d' }],
+                subCharacters: true,
+                subCharactersList: [{ level: 111, rasa: 'war' }, { level: 115, rasa: 'shaman' }, { level: 115, rasa: 'shaman' }, { level: 115, rasa: 'shaman' }],
+                secondaryAccounts: true,
+                secondaryAccountsList: [
+                        {
+                                rasa: 'lykan', level: 61, skills: 's1', skillsInfo: { skill1: '1', skill2: 'M7', skill3: 'M3', },
+                                alchemy: {
+                                        ruby: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        diamond: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        onyx: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        granate: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        saphire: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        jade: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                }
+                        },
+                        {
+                                rasa: 'shaman', level: 61, skills: 's1', skillsInfo: { skill1: '1', skill2: 'M7', skill3: 'M3', },
+                                alchemy: {
+                                        ruby: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        diamond: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        onyx: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        granate: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        saphire: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                        jade: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
+                                }
+                        },
+
+                ],
+                meleyAccounts: true,
+                meleyAccountsNumber: 9,
+                priceW: 100,
+                priceRON: 500,
+                description: 'Se vide cont ninja lv 123 bio la crengute',
+                id: 13912323123,
+                contact: 'Alfredo#9912'
+        },
+        ]
+
+        useEffect(() => {
+                setResults(res)
+                setNewResults(res)
         }, [])
+        // useEffect(() => {
+        //         //get data from the server (get all platforms)
+
+        //         const getData = async () => {
+        //                 const response = await fetch('http://localhost:4000/')
+        //                 const json = await response.json()
+        //                 if (response.ok) {
+        //                         setResults(json)
+        //                         setNewResults(json)
+        //                 }
+        //         }
+
+        //         getData()
+        // }, [])
 
 
         const [filters, setFilters] = useState({

@@ -11,7 +11,7 @@ function SubCharacters({ data }) {
                 {data.subCharacters && data.subCharactersList.length == 1 && <><NoSubCharacter /> <NoSubCharacter /><NoSubCharacter /> </>}
                 {data.subCharacters && data.subCharactersList.length == 2 && <><NoSubCharacter /><NoSubCharacter /></>}
                 {data.subCharacters && data.subCharactersList.length == 3 && <><NoSubCharacter /></>}
-                {!data.subCharacters && <><NoSubCharacter /> <NoSubCharacter /> <NoSubCharacter /><NoSubCharacter /></>}
+                {data.subCharacters && data.subCharactersList.length == 0 && <><NoSubCharacter /> <NoSubCharacter /> <NoSubCharacter /><NoSubCharacter /></>}
 
             </div>
         </div>
