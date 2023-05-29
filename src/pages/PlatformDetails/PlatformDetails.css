@@ -1,0 +1,171 @@
+.meleyContainer {
+    border-radius: 10px;
+}
+
+.platformDetails {
+    box-shadow: rgba(255, 255, 255, 0.45) 0px 25px 20px -20px;
+    border-radius: 15px;
+    background-color: #978477;
+    box-sizing: border-box;
+    max-width: 1000px;
+    min-height: fit-content;
+    opacity: 0.95;
+    padding-bottom: 1px;
+}
+
+.detailsReadMore {
+    text-align: center;
+    max-width: fit-content;
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: #1634e0;
+    border-radius: 8px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 100%;
+    height: 40px;
+    line-height: 1.15;
+    outline: none;
+    overflow: hidden;
+    padding: 10px 15px;
+    position: relative;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s, box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+}
+
+.detailsReadMore:disabled {
+    cursor: default;
+}
+
+.readMore:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+
+.colorLevelChamp {
+    color: #9cc7ff;
+}
+
+.detailsDescription {
+    width: 100%;
+    min-height: fit-content;
+    word-wrap: break-word;
+    min-height: 30px;
+}
+
+.description:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.descriereIdContact {
+    max-width: 65%;
+}
+
+.priceInWons {
+    min-width: 135px;
+    border-radius: 10px;
+}
+
+.priceInCurrency {
+    min-width: 135px;
+    border-radius: 10px;
+}
+
+.price {
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1044px) {
+    .upperContent {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media only screen and (max-width: 936px) {
+    .price {
+        flex-direction: column;
+    }
+
+    .descriereIdContact {
+        width: 95%;
+    }
+
+    .secondaryAccounts {
+        margin-top: 2rem;
+    }
+
+    .platform {
+        height: fit-content
+    }
+}
+
+
+
+@media only screen and (max-width: 582px) {
+    .firstColumn {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .rasaImage {
+        height: 140px;
+        min-width: 70px;
+    }
+
+    .rasaImagineDiv {
+        height: 100%;
+        width: 100%;
+    }
+
+    .firstColumn :nth-child(1) {
+        order: 2;
+        margin: 0 0.4rem;
+    }
+
+    .firstColumn :nth-child(2) {
+        order: 1;
+        margin: 0 0.4rem;
+    }
+
+    .firstColumn :nth-child(3) {
+        order: 3;
+        margin: 0 0.4rem;
+    }
+
+    .firstColumn :nth-child(4) {
+        order: 4;
+        margin: 0 0.4rem;
+    }
+
+    .pet {
+        flex-direction: row-reverse;
+    }
+
+
+}
+
+@media only screen and (max-width: 710px) {
+    .alchemy :nth-child(1) .alchemyBonuses {
+        left: 100%;
+    }
+
+    .alchemy :nth-child(6) .alchemyBonuses {
+        left: -80%;
+    }
+}

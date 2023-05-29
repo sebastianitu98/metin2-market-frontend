@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+    background-color: #000000;
+    color: rgb(22, 22, 22);
+    font-size: large;
+}
+
+.alchemyOrSkill {
+    width: 40px;
+    min-width: 40px;
+}
+
+.firstColumn {
+    max-width: 150px;
+}
+
+.upperContent {
+    display: grid;
+    grid-template-columns: 1fr 4fr 3fr;
+    gap: 3%;
+}
+
+.yesOrNo {
+    width: 25px;
+    min-width: 25px;
+    height: 25px;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 0;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(0, 0%, 11%);
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 79%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(0, 0%, 100%);
+}

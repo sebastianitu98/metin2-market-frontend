@@ -1,0 +1,8 @@
+.subCharacterImage {
+    max-width: 60px;
+    max-height: 80px;
+}
+
+.subCharacter {
+    border-radius: 10px;
+}

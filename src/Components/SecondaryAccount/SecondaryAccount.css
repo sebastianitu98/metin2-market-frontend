@@ -1,0 +1,18 @@
+.secondaryAccountImage {
+    max-width: 40px;
+    max-height: 60px;
+}
+
+.secondaryAccount {
+    min-width: 100%;
+    min-height: 120px;
+    max-height: 120px;
+    border-radius: 10px;
+}
+
+.noSecondaryAccount {
+    min-height: 120px;
+    max-height: 120px;
+    max-width: 100%;
+    border-radius: 10px;
+}

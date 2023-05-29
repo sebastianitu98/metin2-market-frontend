@@ -1,0 +1,86 @@
+.meleyContainer {
+    border-radius: 10px;
+}
+
+.platform {
+    box-shadow: rgba(255, 255, 255, 0.45) 0px 25px 20px -20px;
+    border-radius: 15px;
+    background-color: #978477;
+    box-sizing: border-box;
+    max-width: 1000px;
+    min-height: fit-content;
+    opacity: 0.95;
+    padding-bottom: 1px;
+}
+
+.readMore {
+    max-width: fit-content;
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: #1634e0;
+    border-radius: 8px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 100%;
+    min-height: fit-content;
+    line-height: 1.15;
+    margin: 0 auto 10px auto;
+    padding: 5px 20px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s, box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.readMore:disabled {
+    cursor: default;
+}
+
+.readMore:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+
+.colorLevelChamp {
+    color: #9cc7ff;
+}
+
+.description {
+    max-width: 70%;
+    min-height: 30px;
+}
+
+.priceInWons {
+    min-width: 135px;
+    border-radius: 10px;
+}
+
+.priceInCurrency {
+    min-width: 135px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 1030px) {
+    .upperContent {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .platform {
+        max-width: 100%;
+    }
+
+    .platform .upperContent .firstColumn .rasaImagineDiv {
+        min-width: 60px;
+    }
+}

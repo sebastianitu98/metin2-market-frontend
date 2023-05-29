@@ -1,0 +1,18 @@
+.filters {
+    max-width: 1000px;
+}
+
+.inputFieldLevel {
+    max-width: 50px;
+}
+
+
+.inputField {
+    max-width: 150px;
+}
+
+@media only screen and (max-width: 742px) {
+    .filters {
+        flex-wrap: wrap;
+    }
+}

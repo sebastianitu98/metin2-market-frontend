@@ -1,0 +1,1 @@
+export const costumAura = 'https://img.m2icondb.com/49001.png'
