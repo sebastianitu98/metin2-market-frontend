@@ -36,7 +36,7 @@ function PlatformResults() {
                                 diamond: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
                                 onyx: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
                                 granate: { class: 'mitic', clarity: 'stralucitor', bonuses: { bns1: 'bns1', bns2: 'bns4', bns3: 'bns3' } },
-                                saphire: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns8' } },
+                                saphire: { class: 'mitic', clarity: 'opac', bonuses: { bns1: 'bns10', bns2: 'bns9', bns3: 'bns8' } },
                                 jade: { class: 'mitic', clarity: 'excelent', bonuses: { bns1: 'bns1', bns2: 'bns2', bns3: 'bns3' } },
                         },
                         permanentHelpers: { conducere: 'M7', inspiratie: 'M1', carisma: 'M2', polymorph: 'P', precizie: 'G3', horseLevel: 13 },
