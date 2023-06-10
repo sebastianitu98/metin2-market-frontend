@@ -55,4 +55,15 @@
     .platform .subCharactersElement {
         display: none
     }
+
+}
+
+@media only screen and (max-width: 582px) {
+    .serverLevel {
+        flex-direction: column-reverse;
+    }
+
+    .price {
+        margin-right: 0;
+    }
 }

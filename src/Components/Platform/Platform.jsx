@@ -28,6 +28,7 @@ function Platform({ data }) {
                 <div className="firstColumn flex flex-col px-2 text-center">
 
                     <div className="serverLevel flex flex-col justify-center">
+                        <h2>SERVER:</h2>
                         <h2 className='w-full' title='Server'>{data.server.toUpperCase()}</h2>
                         {data && !data.levelChamp && <h2>Level: <span className='text-neutral-950'>{data.level}</span></h2>}
                         {data && data.levelChamp && <h2>Level: <span className='colorLevelChamp'>{data.levelChampion}</span></h2>}

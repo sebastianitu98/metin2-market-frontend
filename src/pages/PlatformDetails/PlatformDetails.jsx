@@ -23,15 +23,12 @@ function PlatformDetails() {
 
     const [data, setData] = useState()
 
-    { console.log(id) }
-
     useEffect(() => {
         //get data from the server (get all platforms)
 
         const getData = async () => {
-            const response = await fetch(`http://localhost:4000/${id}`)
+            const response = await fetch(`http://3.121.110.171:3000/${id}`)
             const json = await response.json()
-            console.log(json)
             if (response.ok) {
                 setData(json)
             }
@@ -57,7 +54,7 @@ function PlatformDetails() {
                     </div>
 
                     <div className="rasaImagineDiv mx-auto flex justify-center">
-                        <img className='rasaImage mx-auto' src={`src/assets/${data.rasa}.png`} alt="Img containing race" />
+                        <img className='rasaImage mx-auto' src={`${data.rasa}.png`} alt="Img containing race" />
                     </div>
                     <div className="biologAuraCostume flex flex-col justify-center">
                         {/* BIOLOG */}
@@ -77,7 +74,7 @@ function PlatformDetails() {
                                     title={`${elementeBiolog['bijIntelepciune'].name}`}
                                 />
                                 <img className='yesOrNo'
-                                    src='src\assets\yes.png'
+                                    src='yes.png'
                                     alt={`BIOLOG TERMINAT`}
                                     title={`BIOLOG TERMINAT`}
                                 />
@@ -95,11 +92,11 @@ function PlatformDetails() {
                         {data.auraCostume ?
                             <div className='flex my-2 mx-auto flex justify-between w-3/4 items-center'>
                                 <img className='alchemyOrSkill' src={costumAura} alt="Detine costum aura" />
-                                <img className='yesOrNo' src="src/assets/yes.png" alt="DA" />
+                                <img className='yesOrNo' src="yes.png" alt="DA" />
                             </div> :
                             <div className="flex my-2 mx-auto flex justify-between w-3/4 items-center">
                                 <img className='alchemyOrSkill' src={costumAura} alt="Nu detine costum aura" />
-                                <img className='yesOrNo' src="src/assets/no.png" alt="NU" />
+                                <img className='yesOrNo' src="no.png" alt="NU" />
                             </div>}
                     </div>
 
@@ -109,14 +106,14 @@ function PlatformDetails() {
                             <div className='mx-auto my-2 w-full'>
                                 <div className='mx-auto my-2 flex justify-between  w-3/4 items-center'>
                                     <img className='alchemyOrSkill' src={`${peturi.khan.url}`} alt="No pet" title='Khan / Porcusor' />
-                                    <img className='yesOrNo' src="src/assets/no.png" alt="NU" />
+                                    <img className='yesOrNo' src="no.png" alt="NU" />
                                 </div>
                                 <span className=''>0 z</span>
                             </div> :
                             <div className='mx-auto my-2 w-full'>
                                 <div className='mx-auto my-2 flex justify-between w-3/4 items-center'>
                                     <img className='alchemyOrSkill' src={`${peturi.khan.url}`} alt="Yes pet" title='Khan / Porcusor' />
-                                    <img className='yesOrNo' src="src/assets/yes.png" alt="DA" />
+                                    <img className='yesOrNo' src="yes.png" alt="DA" />
                                 </div>
                                 <span className=''>{data.petDays} z</span>
                             </div>
