@@ -620,7 +620,7 @@ function PlatformResults() {
                 //get data from the server (get all platforms)
 
                 const getData = async () => {
-                        const response = await fetch('http://3.121.110.171:3000/')
+                        const response = await fetch('http://3.121.110.171:80/')
                         const json = await response.json()
                         if (response.ok) {
                                 setResults(json)

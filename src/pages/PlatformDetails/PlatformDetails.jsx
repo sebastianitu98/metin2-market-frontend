@@ -27,7 +27,7 @@ function PlatformDetails() {
         //get data from the server (get all platforms)
 
         const getData = async () => {
-            const response = await fetch(`http://3.121.110.171:3000/${id}`)
+            const response = await fetch(`http://3.121.110.171:80/${id}`)
             const json = await response.json()
             if (response.ok) {
                 setData(json)
