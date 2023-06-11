@@ -2,7 +2,7 @@ const alchemyValues = {
     ruby: {
         bns1: {
             name: 'Paguba medie ',
-            legendar:{
+            legendar: {
                 opac: '8%',
                 clar: '9%',
                 perfect: '10%',
@@ -15,11 +15,11 @@ const alchemyValues = {
                 perfect: '12%',
                 stralucitor: '18%',
                 excelent: '24%'
-            }   
+            }
         },
         bns2: {
             name: 'Rezistenta medie la paguba ',
-            legendar:{
+            legendar: {
                 opac: '8%',
                 clar: '9%',
                 perfect: '10%',
@@ -32,11 +32,11 @@ const alchemyValues = {
                 perfect: '12%',
                 stralucitor: '18%',
                 excelent: '24%'
-            }   
+            }
         },
         bns3: {
             name: 'Valoare atac + ',
-            legendar:{
+            legendar: {
                 opac: '150',
                 clar: '165',
                 perfect: '195',
@@ -49,11 +49,11 @@ const alchemyValues = {
                 perfect: '240',
                 stralucitor: '360',
                 excelent: '480'
-            }   
+            }
         },
         bns4: {
             name: 'Aparare + ',
-            legendar:{
+            legendar: {
                 opac: '100',
                 clar: '110',
                 perfect: '130',
@@ -69,10 +69,10 @@ const alchemyValues = {
             }
         }
     },
-    diamond:{
+    diamond: {
         bns1: {
             name: 'Paguba abilitatii',
-            legendar:{
+            legendar: {
                 opac: '8%',
                 clar: '9%',
                 perfect: '10%',
@@ -85,11 +85,11 @@ const alchemyValues = {
                 perfect: '12%',
                 stralucitor: '18%',
                 excelent: '24%'
-            }   
+            }
         },
         bns2: {
             name: 'Rezistenta la paguba abilitatii ',
-            legendar:{
+            legendar: {
                 opac: '8%',
                 clar: '9%',
                 perfect: '10%',
@@ -102,11 +102,11 @@ const alchemyValues = {
                 perfect: '12%',
                 stralucitor: '18%',
                 excelent: '24%'
-            }   
+            }
         },
         bns3: {
             name: 'Aparare magica +',
-            legendar:{
+            legendar: {
                 opac: '8',
                 clar: '9',
                 perfect: '10',
@@ -119,11 +119,11 @@ const alchemyValues = {
                 perfect: '12',
                 stralucitor: '18',
                 excelent: '24'
-            }   
+            }
         },
         bns4: {
             name: 'Valoare atac magic +',
-            legendar:{
+            legendar: {
                 opac: '8',
                 clar: '9',
                 perfect: '10',
@@ -136,14 +136,14 @@ const alchemyValues = {
                 perfect: '12',
                 stralucitor: '18',
                 excelent: '24'
-            }   
+            }
         },
 
     },
-    onyx:{
+    onyx: {
         bns1: {
             name: 'Evitare sageti ',
-            legendar:{
+            legendar: {
                 opac: '5%',
                 clar: '6%',
                 perfect: '7%',
@@ -156,11 +156,11 @@ const alchemyValues = {
                 perfect: '8%',
                 stralucitor: '12%',
                 excelent: '16%'
-            }   
+            }
         },
         bns2: {
             name: 'Rez la lov. patrunzatoare + ',
-            legendar:{
+            legendar: {
                 opac: '5%',
                 clar: '6%',
                 perfect: '7%',
@@ -173,11 +173,11 @@ const alchemyValues = {
                 perfect: '8%',
                 stralucitor: '12%',
                 excelent: '16%'
-            }   
+            }
         },
         bns3: {
             name: 'Rez la lov. critica + ',
-            legendar:{
+            legendar: {
                 opac: '5%',
                 clar: '6%',
                 perfect: '7%',
@@ -190,11 +190,11 @@ const alchemyValues = {
                 perfect: '8%',
                 stralucitor: '12%',
                 excelent: '16%'
-            }   
+            }
         },
         bns4: {
             name: 'Sansa reflectare atac corporal ',
-            legendar:{
+            legendar: {
                 opac: '5%',
                 clar: '6%',
                 perfect: '7%',
@@ -207,13 +207,30 @@ const alchemyValues = {
                 perfect: '8%',
                 stralucitor: '12%',
                 excelent: '16%'
-            }   
+            }
+        },
+        bns5: {
+            name: 'Sansa blocare atac corporal ',
+            legendar: {
+                opac: '5%',
+                clar: '6%',
+                perfect: '7%',
+                stralucitor: '9%',
+                excelent: '12%'
+            },
+            mitic: {
+                opac: '6%',
+                clar: '7%',
+                perfect: '8%',
+                stralucitor: '12%',
+                excelent: '16%'
+            }
         },
     },
-    granate:{
+    granate: {
         bns1: {
             name: 'Max PM +  ',
-            legendar:{
+            legendar: {
                 opac: '750',
                 clar: '825',
                 perfect: '975',
@@ -226,11 +243,11 @@ const alchemyValues = {
                 perfect: '1200',
                 stralucitor: '1800',
                 excelent: '2400'
-            }   
+            }
         },
         bns2: {
             name: 'Max PM + ',
-            legendar:{
+            legendar: {
                 opac: '10%',
                 clar: '11%',
                 perfect: '13%',
@@ -243,11 +260,11 @@ const alchemyValues = {
                 perfect: '16%',
                 stralucitor: '24%',
                 excelent: '32%'
-            }   
+            }
         },
         bns3: {
             name: 'Regenerare PM + ',
-            legendar:{
+            legendar: {
                 opac: '5%',
                 clar: '6%',
                 perfect: '7%',
@@ -264,7 +281,7 @@ const alchemyValues = {
         },
         bns4: {
             name: 'Daune absorbite de PM: ',
-            legendar:{
+            legendar: {
                 opac: '5%',
                 clar: '6%',
                 perfect: '7%',
@@ -277,11 +294,11 @@ const alchemyValues = {
                 perfect: '8%',
                 stralucitor: '12%',
                 excelent: '16%'
-            }   
+            }
         },
         bns5: {
             name: 'Sansa refacere PM ',
-            legendar:{
+            legendar: {
                 opac: '3%',
                 clar: '3%',
                 perfect: '4%',
@@ -294,13 +311,13 @@ const alchemyValues = {
                 perfect: '4%',
                 stralucitor: '6%',
                 excelent: '8%'
-            }   
+            }
         },
     },
-    saphire:{
+    saphire: {
         bns1: {
             name: 'Tare razboinici ',
-            legendar:{
+            legendar: {
                 opac: '8%',
                 clar: '9%',
                 perfect: '10%',
@@ -313,11 +330,11 @@ const alchemyValues = {
                 perfect: '12%',
                 stralucitor: '18%',
                 excelent: '24%'
-            }   
+            }
         },
         bns2: {
             name: 'Tare ninja ',
-            legendar:{
+            legendar: {
                 opac: '8%',
                 clar: '9%',
                 perfect: '10%',
@@ -330,11 +347,11 @@ const alchemyValues = {
                 perfect: '12%',
                 stralucitor: '18%',
                 excelent: '24%'
-            }   
+            }
         },
         bns3: {
             name: 'Tare sura ',
-            legendar:{
+            legendar: {
                 opac: '8%',
                 clar: '9%',
                 perfect: '10%',
@@ -347,11 +364,11 @@ const alchemyValues = {
                 perfect: '12%',
                 stralucitor: '18%',
                 excelent: '24%'
-            }   
+            }
         },
         bns4: {
             name: 'Tare shaman ',
-            legendar:{
+            legendar: {
                 opac: '8%',
                 clar: '9%',
                 perfect: '10%',
@@ -364,11 +381,11 @@ const alchemyValues = {
                 perfect: '12%',
                 stralucitor: '18%',
                 excelent: '24%'
-            }   
+            }
         },
         bns5: {
             name: 'Tare lykan ',
-            legendar:{
+            legendar: {
                 opac: '8%',
                 clar: '9%',
                 perfect: '10%',
@@ -381,11 +398,11 @@ const alchemyValues = {
                 perfect: '12%',
                 stralucitor: '18%',
                 excelent: '24%'
-            }   
+            }
         },
         bns6: {
             name: 'Aparare razboinici ',
-            legendar:{
+            legendar: {
                 opac: '8%',
                 clar: '9%',
                 perfect: '10%',
@@ -398,11 +415,11 @@ const alchemyValues = {
                 perfect: '12%',
                 stralucitor: '18%',
                 excelent: '24%'
-            }   
+            }
         },
         bns7: {
             name: 'Aparare ninja ',
-            legendar:{
+            legendar: {
                 opac: '8%',
                 clar: '9%',
                 perfect: '10%',
@@ -415,11 +432,11 @@ const alchemyValues = {
                 perfect: '12%',
                 stralucitor: '18%',
                 excelent: '24%'
-            }   
+            }
         },
         bns8: {
             name: 'Aparare sura ',
-            legendar:{
+            legendar: {
                 opac: '8%',
                 clar: '9%',
                 perfect: '10%',
@@ -432,11 +449,11 @@ const alchemyValues = {
                 perfect: '12%',
                 stralucitor: '18%',
                 excelent: '24%'
-            }   
+            }
         },
         bns9: {
             name: 'Aparare shaman ',
-            legendar:{
+            legendar: {
                 opac: '8%',
                 clar: '9%',
                 perfect: '10%',
@@ -449,11 +466,11 @@ const alchemyValues = {
                 perfect: '12%',
                 stralucitor: '18%',
                 excelent: '24%'
-            }   
+            }
         },
         bns10: {
             name: 'Aparare lykan ',
-            legendar:{
+            legendar: {
                 opac: '8%',
                 clar: '9%',
                 perfect: '10%',
@@ -466,13 +483,13 @@ const alchemyValues = {
                 perfect: '12%',
                 stralucitor: '18%',
                 excelent: '24%'
-            }   
+            }
         },
     },
-    jade:{
+    jade: {
         bns1: {
             name: 'Max PV + ',
-            legendar:{
+            legendar: {
                 opac: '1500',
                 clar: '1650',
                 perfect: '1950',
@@ -485,11 +502,11 @@ const alchemyValues = {
                 perfect: '2400',
                 stralucitor: '3600',
                 excelent: '4800'
-            }   
+            }
         },
         bns2: {
             name: 'Max PV +',
-            legendar:{
+            legendar: {
                 opac: '10%',
                 clar: '11%',
                 perfect: '13%',
@@ -502,11 +519,11 @@ const alchemyValues = {
                 perfect: '16%',
                 stralucitor: '24%',
                 excelent: '32%'
-            }   
+            }
         },
         bns3: {
             name: 'Daune absorbite de PV',
-            legendar:{
+            legendar: {
                 opac: '5%',
                 clar: '6%',
                 perfect: '7%',
@@ -519,11 +536,11 @@ const alchemyValues = {
                 perfect: '8%',
                 stralucitor: '12%',
                 excelent: '16%'
-            }   
+            }
         },
         bns4: {
             name: 'Regenerare PV: ',
-            legendar:{
+            legendar: {
                 opac: '5%',
                 clar: '6%',
                 perfect: '7%',
@@ -536,11 +553,11 @@ const alchemyValues = {
                 perfect: '8%',
                 stralucitor: '12%',
                 excelent: '16%'
-            }   
+            }
         },
         bns5: {
             name: 'Sansa refacere PV: ',
-            legendar:{
+            legendar: {
                 opac: '3%',
                 clar: '3%',
                 perfect: '4%',
@@ -553,7 +570,7 @@ const alchemyValues = {
                 perfect: '4%',
                 stralucitor: '6%',
                 excelent: '8%'
-            }   
+            }
         },
     }
 }
