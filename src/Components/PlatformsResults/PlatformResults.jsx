@@ -682,7 +682,8 @@ function PlatformResults() {
         }
 
         return (
-                <div className='h-full'>
+                <div className='h-full flex flex-col'>
+                        <a href="#" className='text-3xl my-2 mx-auto text-zinc-300'><i class="fa-brands fa-discord"></i> DISCORD - ITU#9920</a>
                         <div className='filters flex justify-around my-2 mx-auto text-zinc-300'>
                                 <div className="server text-center mx-2">
                                         <h3>SERVER:</h3>
